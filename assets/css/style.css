@@ -1,0 +1,103 @@
+/* .classA.classB => là 2 class đi cùng với nhau */
+/* .classA .classB => là classB nằm trong classA */
+*{
+    box-sizing: border-box;
+}
+
+/* xem lại bài 56 để biết nguyên nhân tại sao lại đổi thành 62.5% */
+html{
+    font-size: 62.5%;
+}
+
+/* khôi phục lại cỡ chữ mặc định theo rem */
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ==========common========== */
+a{
+    text-decoration: none;
+}
+
+.main-content{
+    width: 1170px;
+    max-width: calc(100% - 48px); /*đoạn này tốt, có thể áp dụng để Responsive web*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    display: inline-block;
+    line-height: 50px;
+    min-width: 118px;
+    padding: 0 16px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 24.5px;
+    background: #171100;
+}
+/* ==========header========== */
+.header{
+    background: #fcebb8;
+}
+
+/* đoạn này dùng để neo, dán thanh NAV khi cuộn chuột xuống */
+.header.fixed{
+    position: sticky;
+    top: -28px;
+}
+
+.header .body{
+/* chỉnh sửa class body khi nó ở trong class header
+class body có thể sau này sẽ xuất hiện ở nhiều nơi
+class header chỉ duy nhất => nên viết tường minh nhất có thể */
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.nav{
+    margin-left: auto;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav a{
+    position: relative;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    padding: 8px 21px;
+}
+
+.nav li.active a,
+.nav a:hover{
+    color: #171100;
+    /* font-weight: 600; dùng weight khiến text bị nhảy doithay đổi độ lớn chữ */
+    text-shadow: 1px 0 0 currentColor; /*thực chất là đang đè một bóng lên text cũ nên k nhảy chữ*/
+}
+
+.nav li.active a::after{
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    display: block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+}
+
+.header .btn-sign-up{
+    min-width: 144px;
+    
+}
+
+.header .action{
+    margin-left: 49px;
+}

@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --font-heading: "Sen", sans-serif;
+    --primary-color: #ffb900;
+}
+
 /* xem lại bài 56 để biết nguyên nhân tại sao lại đổi thành 62.5% */
 html{
     font-size: 62.5%;
@@ -36,8 +41,12 @@ a{
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
-    border-radius: 24.5px;
+    border-radius: 999px;
     background: #171100;
+}
+
+.btn:hover{
+    opacity: 0.9;
 }
 /* ==========header========== */
 .header{
@@ -46,6 +55,7 @@ a{
 
 /* đoạn này dùng để neo, dán thanh NAV khi cuộn chuột xuống */
 .header.fixed{
+    z-index: 1; /* đoạn này dùng để fix lỗi ảnh chèn lên logo trên thanh nav bar đã ghim*/
     position: sticky;
     top: -28px;
 }
@@ -183,3 +193,85 @@ class header chỉ duy nhất => nên viết tường minh nhất có thể */
 }
 
 /* ========== hero right ========== */
+.hero .content-block{
+    width: 52%;
+    padding-left: 130px;
+    padding-top: 64px;
+}
+
+.hero .heading{
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+}
+
+.hero .desc{
+    margin-top: 22px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero .cta-group{
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero-cta{
+    min-width: 180px;
+    line-height: 64px;
+    background-color: var(--primary-color);
+}
+
+.hero .watch-video{
+    margin-left: 28px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hero .watch-video .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-video span{
+    margin-left: 14px;
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero .desc-recent{
+    margin-top: 48px;
+}
+
+.hero .stats{
+    margin-top: 8px;
+}
+
+.hero .stats strong{
+    margin-right: 15px;
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.23; /* 122.727% */
+}
+
+.hero .stats strong:nth-child(2){
+    margin-left: 28px;
+}

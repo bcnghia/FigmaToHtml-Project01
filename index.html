@@ -145,18 +145,22 @@
 
                 <div class="course-list">
                     <!-- item 1 -->
-                    <!-- gắn thẻ a cho title và ảnh đại diện hàng -->
+                    <!-- gắn thẻ a cho title và ảnh đại diện hàng
+                    mô tả thì quá 2 dòng mới hiển thị dấu 3 chấm nên sẽ dùng line-2,
+                    còn tiêu đề cần ngắn gọn nên 1 dòng là được -->
                     <div class="course-item">
                         <a href="#!"><img src="./assets/img/course-1.jpg" alt="Basic web design" class="thumb"></a>
                         <div class="info">
                             <div class="head">
-                                <h3 class="title"><a href="#!">Basic web design</a></h3>
+                                <h3 class="title"><a class="line-clamp" href="#!">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, sunt?</a></h3>
                                 <div class="rating">
                                     <img src="./assets/icon/star.svg" alt="" class="star">
                                     <span class="value">4.5</span>
                                 </div>
                             </div>
-                            <p class="desc">Get the best course, gain knowledge and shine for your future career.</p>
+                            <p class="desc line-clamp line-2 break-all">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ut aliquid, aperiam quaerat eligendi iste nostrum, minima, eos magni minus tempore harum corporis amet possimus earum quis quas! Soluta, a.
+                            Repudiandae quo necessitatibus, magnam esse quas qui saepe pariatur iste dolore accusamus consequatur autem amet mollitia, sunt molestiae. Repellendus, voluptatum libero tempora magnam facere sed. Eos nam odio sint facere!
+                            Quasi libero veniam quaerat inventore consectetur quo, tenetur vel neque placeat repellat! Rem, ipsa esse rerum praesentium quaerat facere consequatur reprehenderit similique repellat aperiam accusamus molestiae facilis aut, odio debitis?</p>
 
                             <div class="foot">
                                 <span class="price">$120.75</span>
@@ -170,13 +174,15 @@
                         <a href="#!"><img src="./assets/img/course-2.jpg" alt="UI/UX design" class="thumb"></a>
                         <div class="info">
                             <div class="head">
-                                <h3 class="title"><a href="#!">UI/UX design</a></h3>
+                                <h3 class="title"><a class="line-clamp" href="#!">UI/UX design</a></h3>
                                 <div class="rating">
                                     <img src="./assets/icon/star.svg" alt="" class="star">
                                     <span class="value">4.5</span>
                                 </div>
                             </div>
-                            <p class="desc">Get the best course, gain knowledge and shine for your future career.</p>
+                            <p class="desc line-clamp line-2 break-all">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo repellat, est aliquid quibusdam, magni animi nemo soluta exercitationem dicta fuga fugit voluptas rem beatae dolorem nam nobis architecto pariatur incidunt!
+                            Laboriosam impedit repellat nisi maxime beatae sint, commodi aut voluptas nemo doloremque doloribus incidunt voluptatum provident omnis consequuntur fugiat id eaque iure! Fugiat harum quasi unde voluptatibus debitis dolorem beatae?
+                            Repellat tempora magni deleniti magnam eligendi quia, eius non perferendis exercitationem maiores dignissimos explicabo molestias tenetur quisquam dicta. Numquam eaque fugit obcaecati magni dolore voluptatibus quisquam facilis veritatis suscipit. Odio!</p>
 
                             <div class="foot">
                                 <span class="price">$120.75</span>
@@ -190,18 +196,47 @@
                         <a href="#!"><img src="./assets/img/course-3.jpg" alt="Web App design" class="thumb"></a>
                         <div class="info">
                             <div class="head">
-                                <h3 class="title"><a href="#!">Web App design</a></h3>
+                                <h3 class="title"><a class="line-clamp" href="#!">Web App design</a></h3>
                                 <div class="rating">
                                     <img src="./assets/icon/star.svg" alt="" class="star">
                                     <span class="value">4.5</span>
                                 </div>
                             </div>
-                            <p class="desc">Get the best course, gain knowledge and shine for your future career.</p>
+                            <p class="desc line-clamp line-2 break-all">Loremipsumdolorsitametconsecteturadipisicingelit.Esseimpeditsimiliquesedeafaciliscorruptiofficialiberodoloreinventorepariaturquaequoitaque,velitquibusdamsintquosoditodiomolestias.
+Remteneturomnistempore,oditeligendinostrumeaqueprovidentnon,delectussimiliquemagni?Doloresvoluptatemquasicommodi?Doloranimi,nostrum ipsa doloribus recusandae atque tenetur exercitationem eligendi consequuntur, ea tempora?
+                            Animi veniam recusandae optio numquam facere ea. Nemo blanditiis reiciendis ipsa laudantium? Saepe, vel possimus repellendus, doloremque quaerat exercitationem debitis corporis recusandae eligendi neque, dolores minima sint quam ut quisquam!
+                            Dicta, temporibus in totam omnis asperiores beatae quas voluptatibus delectus voluptatem ratione animi, distinctio placeat dolor itaque tempore, accusantium quam quis deleniti suscipit dolorum cum! Odit quo in aspernatur harum?</p>
 
                             <div class="foot">
                                 <span class="price">$120.75</span>
                                 <button class="btn btn-book">Book Now</button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- feedback -->
+        <div class="feedback">
+            <div class="main-content">
+                <div class="feedback-list">
+                    <div class="feedback-item">
+                        <!-- khối bên trái -->
+                        <div class="info">
+                            <img src="./assets/img/ava1.jpg" alt="Peter Moor" class="avatar">
+                            <p class="member-name">Peter Moor</p>
+                            <p class="desc">Student of Web Design</p>
+                            <div class="dots">
+                                <span class="dot"></span>
+                                <span class="dot" active></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <!-- khối bên phải -->
+                        <div class="content">
+                            <img src="./assets/icon/open-quote.svg" alt="" class="open-quotes">
+                            <blockquote>Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </blockquote>
                         </div>
                     </div>
                 </div>

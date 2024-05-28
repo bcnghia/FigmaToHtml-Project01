@@ -432,11 +432,18 @@ class header chỉ duy nhất => nên viết tường minh nhất có thể */
 .feedback{
     margin-top: 135px;
     background: #2E2100;
-    padding: 96p 0;
+    padding: 96px 0;
+}
+
+.feedback-list{
+    display: flex;
+    overflow: hidden;
 }
 
 .feedback-item{
+    width: 100%;
     display: flex;
+    flex-shrink: 0;
 }
 
 .feedback-item .avatar{
@@ -462,15 +469,10 @@ class header chỉ duy nhất => nên viết tường minh nhất có thể */
     line-height: 1.86; /* 185.714% */
 }
 
-feGaussianBlur .dots{
+.feedback-item .dots{
     gap: 6px;
     display: flex; 
     margin-top: 28px;
-}
-
-.feedback-item .dots{
-    display: flex;  
-    margin-top: 28px; 
 }
 
 .feedback-item .dot{
@@ -478,6 +480,7 @@ feGaussianBlur .dots{
     width: 6px;
     border-radius: 50%;
     background: #634700;
+    cursor: pointer;
 }
 
 .feedback-item .dot.active{ 
@@ -490,9 +493,75 @@ feGaussianBlur .dots{
     margin-left: auto;
 }
 
-.feedback-item .blockquote{
+.feedback-item blockquote{
     color: #fff;
     font-size: 2.6rem;
     font-style: italic;
-    line-height: 1,54;
+    line-height: 1.54;
+}
+
+/* =============== features 1 =============== */
+.features{
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.features .body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .images{
+    display: flex;
+    gap: 30px;
+}
+
+.features .images img{
+    width: 270px;
+    height: 405px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.features .lower{
+    margin-top: 34px;
+}
+
+.features .content{
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features .desc{
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.features .cta-btn{
+    width: 137px;
+    height: 50px;
+    margin-top: 32px;
+    background: var(--primary-color);
+}
+
+/* =============== features =============== */
+.features-2nd{
+    margin-top: 70px;
+}
+
+.features-2nd .body{
+    flex-direction: row-reverse;
+}
+
+.features-2nd .content{
+    width: 49%;
+}
+
+.features-2nd .images img{
+    width: 470px;
+    height: 440px;
 }

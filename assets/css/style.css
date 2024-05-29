@@ -692,3 +692,80 @@ class header chỉ duy nhất => nên viết tường minh nhất có thể */
     cursor: default;
     /* khi đã được chọn rồi thì sẽ không hiển thị bàn tay khi trỏ chuột vì đang được chọn */
 }
+
+/* ============== footer =============== */
+footer{
+    background: #2E2100;
+    padding: 96px 135px 0;
+}
+
+.footer .row{
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554B;
+}
+
+.footer .row .column{
+    width: 21.6%;
+}
+
+.footer .row .column:first-child{
+    width: 35%;
+}
+
+.footer .desc{
+    margin-top: 18px;
+    max-width: 267px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+}
+
+.footer .socials{
+    display: flex;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.footer .title{
+    padding-bottom: 14px;
+    padding-right: 48px;
+    display: inline-block;
+    border-bottom: 1px solid #59554B;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.footer .list{
+    margin-top: 28px;
+}
+
+.footer .list a{
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+}
+
+.footer .list li:last-child a{
+    margin-bottom: 0;
+}
+
+.footer .list strong{
+    color: #FFF;
+    font-size: 1.4;
+    font-weight: 600;
+    line-height: 1.86; /* 185.714% */
+}
+
+.footer .copyright{
+    padding: 28px 0;
+    color: #807D74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
